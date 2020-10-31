@@ -1,7 +1,7 @@
 {
 	"Modality": "CT",
 	"Manufacturer": "Philips",
-	"ManufacturersModelName": "Ingenuity_CT",
+	"ManufacturersModelName": "Ingenuity CT",
 	"InstitutionName": "QMC",
 	"InstitutionalDepartmentName": "Radiology",
 	"InstitutionAddress": "NOTTINGHAM",
@@ -11,15 +11,16 @@
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "4.1",
 	"SeriesDescription": "STEREOTAXIS",
-	"ProtocolName": "1F_STEREOTAXIS_Head",
+	"ProtocolName": "1F STEREOTAXIS /Head",
 	"ScanOptions": "AXIAL",
 	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
 	"SeriesNumber": 301,
 	"AcquisitionTime": "09:38:8.000000",
 	"AcquisitionNumber": 2,
 	"ImageComments": "STEREOTAXIS",
+	"ConvolutionKernel": "UB",
+	"Unit": "HU",
 	"XRayExposure": 300,
-	"ReconMatrixPE": 512,
 	"ImageOrientationPatientDICOM": [
 		1,
 		0,
@@ -28,5 +29,5 @@
 		0.95882,
 		0.284015	],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190720  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.1"
+	"ConversionSoftwareVersion": "v1.0.20201030"
 }

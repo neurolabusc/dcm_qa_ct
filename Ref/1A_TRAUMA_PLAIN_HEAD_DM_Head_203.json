@@ -1,7 +1,7 @@
 {
 	"Modality": "CT",
 	"Manufacturer": "Philips",
-	"ManufacturersModelName": "Ingenuity_CT",
+	"ManufacturersModelName": "Ingenuity CT",
 	"InstitutionName": "QMC",
 	"InstitutionalDepartmentName": "Radiology",
 	"InstitutionAddress": "NOTTINGHAM",
@@ -10,16 +10,16 @@
 	"BodyPartExamined": "BRAIN",
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "4.1",
-	"SeriesDescription": "BONE_BRAIN_1MM",
-	"ProtocolName": "1A_TRAUMA_PLAIN_HEAD_DM_Head",
+	"SeriesDescription": "BONE BRAIN 1MM",
+	"ProtocolName": "1A TRAUMA/PLAIN HEAD DM /Head",
 	"ScanOptions": "HELIX",
 	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
 	"SeriesNumber": 203,
 	"AcquisitionTime": "09:29:21.000000",
 	"AcquisitionNumber": 1,
-	"ImageComments": "BONE_BRAIN_1MM",
+	"ImageComments": "BONE BRAIN 1MM",
+	"ConvolutionKernel": "YA",
 	"XRayExposure": 143,
-	"ReconMatrixPE": 512,
 	"ImageOrientationPatientDICOM": [
 		1,
 		0,
@@ -28,5 +28,5 @@
 		1,
 		0	],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190720  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.1"
+	"ConversionSoftwareVersion": "v1.0.20201030"
 }
