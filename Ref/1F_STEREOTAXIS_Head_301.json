@@ -19,7 +19,8 @@
 	"AcquisitionNumber": 2,
 	"ImageComments": "STEREOTAXIS",
 	"ConvolutionKernel": "UB",
-	"Unit": "HU",
+	"ExposureTime": 0.875,
+	"XRayTubeCurrent": 343,
 	"XRayExposure": 300,
 	"ImageOrientationPatientDICOM": [
 		1,
@@ -29,5 +30,5 @@
 		0.95882,
 		0.284015	],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

@@ -9,6 +9,8 @@
 	"SeriesNumber": 2,
 	"AcquisitionNumber": 1,
 	"ConvolutionKernel": "STD+",
+	"ExposureTime": 2,
+	"XRayTubeCurrent": 180,
 	"SliceThickness": 4,
 	"ImageOrientationPatientDICOM": [
 		1,
@@ -18,5 +20,5 @@
 		0.948324,
 		-0.317305	],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

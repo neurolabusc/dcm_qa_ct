@@ -19,6 +19,8 @@
 	"AcquisitionNumber": 1,
 	"ImageComments": "STD BRAIN 1MM",
 	"ConvolutionKernel": "UB",
+	"ExposureTime": 1.277,
+	"XRayTubeCurrent": 112,
 	"XRayExposure": 143,
 	"ImageOrientationPatientDICOM": [
 		1,
@@ -28,5 +30,5 @@
 		1,
 		0	],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }
