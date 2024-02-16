@@ -29,6 +29,7 @@
 		0,
 		1,
 		0	],
+	"BidsGuess": ["CT","CT"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20211006"
+	"ConversionSoftwareVersion": "v1.0.20240202"
 }
