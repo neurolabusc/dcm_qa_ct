@@ -7,9 +7,10 @@
 	"InstitutionAddress": "NOTTINGHAM",
 	"DeviceSerialNumber": "336067",
 	"StationName": "CT4",
-	"BodyPartExamined": "BRAIN",
+	"BodyPart": "BRAIN",
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "4.1",
+	"StudyDescription": "1A TRAUMA/PLAIN HEAD DM",
 	"SeriesDescription": "STD BRAIN 1MM, iDose",
 	"ProtocolName": "1A TRAUMA/PLAIN HEAD DM /Head",
 	"ScanOptions": "HELIX",
@@ -31,5 +32,5 @@
 		0	],
 	"BidsGuess": ["CT","CT"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20240202"
+	"ConversionSoftwareVersion": "v1.0.20260416"
 }

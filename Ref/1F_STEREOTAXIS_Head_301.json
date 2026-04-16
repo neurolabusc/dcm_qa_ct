@@ -7,9 +7,10 @@
 	"InstitutionAddress": "NOTTINGHAM",
 	"DeviceSerialNumber": "336067",
 	"StationName": "CT4",
-	"BodyPartExamined": "BRAIN",
+	"BodyPart": "BRAIN",
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "4.1",
+	"StudyDescription": "1A TRAUMA/PLAIN HEAD DM",
 	"SeriesDescription": "STEREOTAXIS",
 	"ProtocolName": "1F STEREOTAXIS /Head",
 	"ScanOptions": "AXIAL",
@@ -31,5 +32,5 @@
 		0.284015	],
 	"BidsGuess": ["CT","CT"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20240202"
+	"ConversionSoftwareVersion": "v1.0.20260416"
 }

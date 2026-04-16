@@ -1,0 +1,21 @@
+{
+	"Modality": "CT",
+	"Manufacturer": "Philips",
+	"ManufacturersModelName": "Ingenuity CT",
+	"InstitutionName": "QMC",
+	"InstitutionalDepartmentName": "Radiology",
+	"InstitutionAddress": "NOTTINGHAM",
+	"DeviceSerialNumber": "336067",
+	"StationName": "CT4",
+	"SoftwareVersions": "4.5.0.30020",
+	"StudyDescription": "1A TRAUMA/PLAIN HEAD DM",
+	"SeriesDescription": "Exam Summary",
+	"ProtocolName": "Exam Summary",
+	"ImageType": ["DERIVED", "SECONDARY", "RESULTS"],
+	"RawImage": false,
+	"SeriesNumber": 401,
+	"ImageComments": "Exam Results",
+	"BidsGuess": ["CT","CT"],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20260416"
+}
