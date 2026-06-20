@@ -2,6 +2,7 @@
 	"Modality": "CT",
 	"Manufacturer": "GE",
 	"ManufacturersModelName": "HiSpeed Dual",
+	"InstitutionalDepartmentName": "None",
 	"BodyPart": "HEAD",
 	"PatientPosition": "HFS",
 	"SoftwareVersions": "3.40",
@@ -20,7 +21,7 @@
 		0,
 		0.948324,
 		-0.317305	],
-	"BidsGuess": ["CT","CT"],
+	"BidsGuess": ["ct","_ct"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

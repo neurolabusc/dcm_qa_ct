@@ -16,7 +16,7 @@
 	"ScanOptions": "AXIAL",
 	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
 	"SeriesNumber": 301,
-	"AcquisitionTime": "09:38:8.000000",
+	"AcquisitionTime": "09:38:08.000000",
 	"AcquisitionNumber": 2,
 	"ImageComments": "STEREOTAXIS",
 	"ConvolutionKernel": "UB",
@@ -30,7 +30,7 @@
 		0,
 		0.95882,
 		0.284015	],
-	"BidsGuess": ["CT","CT"],
+	"BidsGuess": ["ct","_ct"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260416"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }
