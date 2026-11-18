@@ -5,7 +5,8 @@ and pixdim x*y*z must equal the voxel volume (|det| of the sform). Classic slice
 SpacingBetweenSlices (the parser stores the IPP distance) and Enhanced CT with a
 perpendicular SpacingBetweenSlices, each at 0 and +/-20 degrees; classic slices
 whose instance order is descending (z flip) or permuted, and feet-first (slice
-column pointing down). Cases from external and internal audits (2026-11-18).
+column pointing down). Also: overlay planes of a 4D stack (_ROI1, one volume per
+frame). Cases from external and internal audits (2026-11-18).
 
 Regenerate the fixtures (deterministic UIDs, so the files do not change), then
 convert them with dcm2niix and check the geometry; batch.sh compares Ref as usual:
@@ -15,6 +16,7 @@ import hashlib, json, math, struct, subprocess, sys, tempfile
 from pathlib import Path
 
 import numpy as np
+import pydicom
 from pydicom.dataset import Dataset, FileMetaDataset
 from pydicom.uid import ExplicitVRLittleEndian
 
@@ -156,4 +158,32 @@ with tempfile.TemporaryDirectory() as tmp:
         failures += not ok
         extra = f", slice 0 {first:.6f}, SlicePositions {sp:.6f} mm" if zs else ""
         print(f"{'ok  ' if ok else 'FAIL'} {name}: sform slice column z {col_z:.4f}, max IPP error {err:.6f} mm{extra}")
+
+    # Two images at one position (a surview's frames) stack as 4D; each carries
+    # its own overlay plane (60xx), which must become one _ROI1 volume per frame,
+    # not an empty 3D plane. Bits set per frame: 1 and 2.
+    name = "overlay_4d"
+    src, out = IN / name, Path(tmp, name)
+    src.mkdir(parents=True, exist_ok=True)
+    out.mkdir()
+    write_series(src, len(CASES) + 1, enhanced=False, spacing=False, tilt=0, inst=(1, 2), zs=[0, 0])
+    for k, bits in enumerate((b"\x01\x00", b"\x01\x80")):
+        f = src / f"{k}.dcm"
+        ds = pydicom.dcmread(f)
+        ds.add_new((0x6000, 0x0010), "US", 4)  # OverlayRows
+        ds.add_new((0x6000, 0x0011), "US", 4)  # OverlayColumns
+        ds.add_new((0x6000, 0x0040), "CS", "G")
+        ds.add_new((0x6000, 0x0050), "SS", [1, 1])
+        ds.add_new((0x6000, 0x0100), "US", 1)
+        ds.add_new((0x6000, 0x0102), "US", 0)
+        ds.add_new((0x6000, 0x3000), "OW", bits)
+        ds.save_as(f, enforce_file_format=True)
+    subprocess.run([EXE, "-z", "n", "-f", "out", "-o", str(out), str(src)], capture_output=True)
+    roi = out / "out_ROI1.nii"
+    b = roi.read_bytes() if roi.exists() else b""
+    dims = struct.unpack("<5h", b[40:50]) if b else ()
+    counts = [sum(1 for v in b[352 + 16 * t : 352 + 16 * (t + 1)] if v) for t in range(2)] if b else []
+    ok = dims[:1] == (4,) and dims[4:5] == (2,) and counts == [1, 2]
+    failures += not ok
+    print(f"{'ok  ' if ok else 'FAIL'} {name}: _ROI1 dims {dims}, overlay voxels per frame {counts}")
 sys.exit(1 if failures else 0)

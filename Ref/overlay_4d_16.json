@@ -1,0 +1,21 @@
+{
+	"Modality": "CT",
+	"Manufacturer": "Siemens",
+	"InstitutionalDepartmentName": "None",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "overlay_4d",
+	"ProtocolName": "overlay_4d",
+	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+	"SeriesNumber": 16,
+	"SliceThickness": 2,
+	"ImageOrientationPatientDICOM": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0	],
+	"BidsGuess": ["ct","_ct"],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20261105"
+}
