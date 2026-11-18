@@ -1,0 +1,21 @@
+{
+	"Modality": "CT",
+	"Manufacturer": "Siemens",
+	"InstitutionalDepartmentName": "None",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "tilt_enhanced_nospacing_20",
+	"ProtocolName": "tilt_enhanced_nospacing_20",
+	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+	"SeriesNumber": 5,
+	"SliceThickness": 1.87939,
+	"ImageOrientationPatientDICOM": [
+		1,
+		0,
+		0,
+		0,
+		0.939693,
+		0.34202	],
+	"BidsGuess": ["ct","_ct"],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20261105"
+}

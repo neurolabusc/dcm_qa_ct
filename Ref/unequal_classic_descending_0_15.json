@@ -1,0 +1,28 @@
+{
+	"Modality": "CT",
+	"Manufacturer": "Siemens",
+	"InstitutionalDepartmentName": "None",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "unequal_classic_descending_0",
+	"ProtocolName": "unequal_classic_descending_0",
+	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+	"SeriesNumber": 15,
+	"SliceThickness": 2,
+	"SlicePositions": [
+		0,
+		2,
+		3,
+		4,
+		10
+	],
+	"ImageOrientationPatientDICOM": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0	],
+	"BidsGuess": ["ct","_ct"],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20261105"
+}

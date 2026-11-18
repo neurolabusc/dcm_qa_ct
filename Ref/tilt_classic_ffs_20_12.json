@@ -1,0 +1,21 @@
+{
+	"Modality": "CT",
+	"Manufacturer": "Siemens",
+	"InstitutionalDepartmentName": "None",
+	"PatientPosition": "FFS",
+	"SeriesDescription": "tilt_classic_ffs_20",
+	"ProtocolName": "tilt_classic_ffs_20",
+	"ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+	"SeriesNumber": 12,
+	"SliceThickness": 1.87939,
+	"ImageOrientationPatientDICOM": [
+		-1,
+		0,
+		0,
+		0,
+		0.939693,
+		0.34202	],
+	"BidsGuess": ["ct","_ct"],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20261105"
+}
